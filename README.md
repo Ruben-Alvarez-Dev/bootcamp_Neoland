@@ -1,2 +1,3 @@
 # bootcamp
-BOOTCAMP Rubén Álvarez
+# BOOTCAMP Rubén Álvarez
+# Comentario inicial
