@@ -1,0 +1,102 @@
+
+/* **Iteración #4: Calcular el promedio**
+
+Calcular un promedio es una tarea extremadamente común. Puedes usar este array para probar tu función: */
+
+/* const numbers2 = [12, 21, 38, 5, 45, 37, 6];
+let totalSum2 = 0;
+let averageResult = 0;
+
+average(numbers2);
+
+function average(parameter) {
+    
+    averageResult = 0;
+
+        numbers2.forEach(element => {
+            totalSum2 = totalSum2 + element
+        })
+    
+    averageResult = totalSum2 / numbers2.length;
+    return averageResult;
+}
+
+console.log("Resultado:", averageResult) */
+
+
+
+
+/* **Iteración #5: Calcular promedio de strings**
+Crea una función que reciba por parámetro un array y cuando es un valor number lo sume
+ y de lo contrario cuente la longitud del string y lo sume. Puedes usar este array para probar tu función:
+ */
+/*  const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
+ function averageWord(param) {
+   // insert code
+ }
+ */
+
+
+/* const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
+
+averageWord(mixedElements);
+
+function averageWord(param) {
+
+    let sumatorio = 0
+
+        mixedElements.forEach(element => {
+            if (typeof element === "number") {
+                sumatorio = sumatorio + element;
+            } else if (typeof element === "string") {
+                sumatorio = sumatorio + (element.length)
+            }
+        });
+    sum2 = sumatorio
+    return sum2
+}
+
+console.log(sum2); */
+
+
+
+/* **Iteración #6: Valores únicos**
+Crea una función que reciba por parámetro un array y compruebe si existen elementos 
+duplicados, en caso que existan los elimina para retornar un array sin los elementos duplicados.
+Puedes usar este array para probar tu función: */
+
+/* const duplicates = [
+    'sushi',
+    'pizza',
+    'burger',
+    'potatoe',
+    'pasta',
+    'ice-cream',
+    'pizza',
+    'chicken',
+    'onion rings',
+    'pasta',
+    'soda'
+  ];
+  let newArray = duplicates;
+  
+removeDuplicates(duplicates);
+console.log("Este es el nuevo array:", newArray);
+
+  
+function removeDuplicates(param) {
+    let valor1 = valor2 = 0;
+        for (valor1; valor1 < duplicates.length; valor1++) {
+            for (valor2 = 0; valor2 < duplicates.length; valor2++) {
+                if (duplicates[valor1] == duplicates[valor2]) {
+                    if (valor1 !== valor2) {
+                        console.log("ENCONTRADO UNO");
+                        newArray.splice(valor2, 1);
+                        console.log("He modificado la posición: ", valor2);
+                    }
+                }   
+            }
+        }
+    return (newArray);
+} */
+
