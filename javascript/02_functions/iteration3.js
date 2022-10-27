@@ -1,3 +1,6 @@
+// JS FUNCTIONS
+// Rubén Álvarez
+
 /*  Iteración #3: Calcular la suma
 
 Calcular una suma puede ser tan simple com iterar sobre un array y sumar cada uno de los elementos.

@@ -1,3 +1,6 @@
+// JS FUNCTIONS
+// Rubén Álvarez
+
 /* **Iteración #4: Calcular el promedio**
 
 Calcular un promedio es una tarea extremadamente común. Puedes usar este array para probar tu función: */
