@@ -1,5 +1,3 @@
-// JS REVIEW BASICS
-// Rubén Álvarez
 
 /* **Iteración #5: Función rollDice**
 
