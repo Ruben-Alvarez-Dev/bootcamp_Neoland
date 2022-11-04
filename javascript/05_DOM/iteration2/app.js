@@ -1,3 +1,6 @@
+// JS DOM
+// Rubén Álvarez
+
 // 2.1 Inserta dinamicamente en un html un div vacio con //javascript.
 
 let tag21 = document.createElement(`div`);
