@@ -35,4 +35,3 @@ const colores2 = [...colores];
 colores2.splice(2, 1)
 console.log(colores2)
 
-
