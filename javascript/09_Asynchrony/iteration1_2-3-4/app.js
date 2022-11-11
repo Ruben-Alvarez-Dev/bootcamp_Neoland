@@ -4,6 +4,10 @@
 /* 2.3 En base al ejercicio anterior. Crea dinamicamente un elemento  por cada petición a la api que diga...'El nombre X tiene un Y porciento de ser de Z' etc etc.
 EJ: El nombre Pepe tiene un 22 porciento de ser de ET y un 6 porciento de ser de MZ. */
 
+/* 2.4 En base al ejercicio anterior, crea un botón con el texto 'X' para cada uno 
+de los p que hayas insertado y que si el usuario hace click en este botón 
+eliminemos el parrafo asociado. */
+
 // declaraciones
 const baseUrl = "https://api.nationalize.io";
 // let input = "francisco";
@@ -31,16 +35,30 @@ const getData = async () => {
 const printData = () => {
     const el = data.country;
     const ruta = document.querySelector(`#list`);
-    const string = `<li><h2>${input}</h2></li>`;
+    const string = `<h2>${input}</h2>`;
 
     ruta.innerHTML += string;
 
+
+// defino e inserto las líneas de información
+
     for (const i in el) {
-        
-        const string2 = `<li id="li${i}">Country id: ${el[i].country_id}, probability: ${el[i].probability}, porcentaje: ${((el[i].probability) * 100).toFixed(1)} %</li>`;
-        
-        ruta.innerHTML += string2;
+        const templateString = `
+            <li id="el${i}"> Country id: ${el[i].country_id}, probability: ${el[i].probability}, porcentaje: ${((el[i].probability) * 100).toFixed(1)} %  </li>`;
+        ruta.innerHTML += templateString;
     }
+
+// defino e inserto botones de borrado
+        
+     const lineLi = document.querySelectorAll(`li`);
+     lineLi.forEach (index => {
+         const btn = document.createElement(`button`);
+         btn.innerHTML = " X ";
+         index.appendChild(btn);
+         btn.addEventListener("click", (evento) =>{
+            btn.parentNode.remove()        
+         })
+     })
 }
 
 
